@@ -545,6 +545,10 @@ h1 {
   margin-right:10px;
   margin-bottom:12px
 }
+.leaflet-bottom.leaflet-left {
+  margin-left: 10px;
+  margin-bottom: 110px;
+}
 .leaflet-control-attribution {
   font-size:8px!important;
   background:#ffffffe5!important
@@ -1370,6 +1374,15 @@ dialog p {
   }
   .brand strong span {
     font-weight:450
+  }
+}
+@media (max-width: 760px) {
+  .map-section:has(.detail-panel:not([hidden])) .leaflet-bottom.leaflet-left {
+    bottom: auto;
+    top: 66px;
+    left: auto;
+    right: 2px;
+    margin: 0;
   }
 }
 @media(prefers-reduced-motion:reduce) {

@@ -154,7 +154,7 @@
     regions = [...new Set(dataset.rows.map((r)=>r.region))];
     rows = dataset.rows.map((row,index)=>({...row,index,colour:colours[regions.indexOf(row.region)]}));
     map = L.map('map',{zoomControl:false,minZoom:10,maxZoom:19,scrollWheelZoom:true}).setView([1.305,103.836],12);
-    L.control.zoom({position:'bottomright'}).addTo(map);
+    L.control.zoom({position:'bottomleft'}).addTo(map);
     tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
     tiles.on('tileerror', () => { if (++tileFailures >= 3) $('#tile-error').hidden=false; });
     tiles.on('tileload', () => { tileFailures=0; $('#tile-error').hidden=true; });
@@ -177,7 +177,8 @@
     document.addEventListener('keydown',(event)=>{if(event.key==='Escape'&&!about.open&&selected)closeDetail();});
     const openHash = () => {const id = decodeURIComponent(location.hash.slice(1)); if(rows.some((r)=>r.id===id)) {if(!visible.some((r)=>r.id===id)) resetFilters();selectRow(id,{focus:false});}};
     openHash(); window.addEventListener('hashchange',openHash);
-    window.addEventListener('resize',()=>{
+    window.addEventListener('resize',()=>{map.invalidateSize();renderMarkers();});
+    window.matchMedia('(max-width:760px)').addEventListener('change',()=>{
       if (document.body.classList.contains('view-list')) return;
       map.invalidateSize();
       if (selected) selectRow(selected.id,{focus:false}); else fitVisible();
