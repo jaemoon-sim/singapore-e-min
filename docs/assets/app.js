@@ -148,7 +148,7 @@
   }
 
   async function init() {
-    const response = await fetch('data/listings.json');
+    const response = await fetch('data/listings.json',{cache:'no-cache'});
     if (!response.ok) throw new Error('매물 데이터를 불러오지 못했습니다.');
     dataset = await response.json(); office = dataset.office;
     regions = [...new Set(dataset.rows.map((r)=>r.region))];

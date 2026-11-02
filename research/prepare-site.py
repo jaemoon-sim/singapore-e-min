@@ -1,5 +1,7 @@
 """Build the static snapshot without any network requests or dependencies."""
 import json
+import hashlib
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -31,4 +33,10 @@ data = {**source, "office": {"name": "Google Singapore", "address": source["dest
 target = ROOT / "docs/data/listings.json"
 target.parent.mkdir(parents=True, exist_ok=True)
 target.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+index = ROOT / "docs/index.html"
+html = index.read_text()
+for asset in ["assets/app.js", "assets/style.css"]:
+    fingerprint = hashlib.sha256((ROOT / "docs" / asset).read_bytes()).hexdigest()[:12]
+    html = re.sub(re.escape(asset) + r"(?:\?v=[a-f0-9]+)?", f"{asset}?v={fingerprint}", html)
+index.write_text(html)
 print(f"Prepared {len(rows)} verified building pins + office; six regions, three listings each.")
