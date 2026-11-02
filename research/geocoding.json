@@ -1,0 +1,402 @@
+{
+  "6 Irwell Hill": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=6+Irwell+Hill&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "error": "Authentication token missing. Please create an account and generate or renew your API Token.",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "IRWELL HILL RESIDENCES",
+        "BLK_NO": "6",
+        "ROAD_NAME": "IRWELL HILL",
+        "BUILDING": "IRWELL HILL RESIDENCES",
+        "ADDRESS": "6 IRWELL HILL IRWELL HILL RESIDENCES SINGAPORE 239590",
+        "POSTAL": "239590",
+        "X": "27810.14347143285",
+        "Y": "31004.55812784843",
+        "LATITUDE": "1.296668722813346",
+        "LONGITUDE": "103.831612635106"
+      }
+    ]
+  },
+  "65 Cavenagh Road": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=65+Cavenagh+Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "WATERSCAPE AT CAVENAGH",
+        "BLK_NO": "65",
+        "ROAD_NAME": "CAVENAGH ROAD",
+        "BUILDING": "WATERSCAPE AT CAVENAGH",
+        "ADDRESS": "65 CAVENAGH ROAD WATERSCAPE AT CAVENAGH SINGAPORE 229619",
+        "POSTAL": "229619",
+        "X": "28833.06054468453",
+        "Y": "31810.32427141257",
+        "LATITUDE": "1.30395577762362",
+        "LONGITUDE": "103.840804014831"
+      }
+    ]
+  },
+  "2 Sarkies Road": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=2+Sarkies+Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "THE HERMITAGE",
+        "BLK_NO": "2",
+        "ROAD_NAME": "SARKIES ROAD",
+        "BUILDING": "THE HERMITAGE",
+        "ADDRESS": "2 SARKIES ROAD THE HERMITAGE SINGAPORE 258117",
+        "POSTAL": "258117",
+        "X": "28396.05469498504",
+        "Y": "32985.74636874907",
+        "LATITUDE": "1.314585889193678",
+        "LONGITUDE": "103.8368773293853"
+      }
+    ]
+  },
+  "1 Rodyk Street": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=1+Rodyk+Street&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "WATERMARK ROBERTSON QUAY",
+        "BLK_NO": "1",
+        "ROAD_NAME": "RODYK STREET",
+        "BUILDING": "WATERMARK ROBERTSON QUAY",
+        "ADDRESS": "1 RODYK STREET WATERMARK ROBERTSON QUAY SINGAPORE 238212",
+        "POSTAL": "238212",
+        "X": "28559.53976310976",
+        "Y": "30370.76486093923",
+        "LATITUDE": "1.290936914919235",
+        "LONGITUDE": "103.8383462780459"
+      }
+    ]
+  },
+  "60 Havelock Road": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=60+Havelock+Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "RIVER PLACE",
+        "BLK_NO": "60",
+        "ROAD_NAME": "HAVELOCK ROAD",
+        "BUILDING": "RIVER PLACE",
+        "ADDRESS": "60 HAVELOCK ROAD RIVER PLACE SINGAPORE 169658",
+        "POSTAL": "169658",
+        "X": "28885.63648642134",
+        "Y": "30224.01093536988",
+        "LATITUDE": "1.289609716468306",
+        "LONGITUDE": "103.8412763893458"
+      }
+    ]
+  },
+  "80 Mohamed Sultan Road": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=80+Mohamed+Sultan+Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "THE PIER AT ROBERTSON",
+        "BLK_NO": "80",
+        "ROAD_NAME": "MOHAMED SULTAN ROAD",
+        "BUILDING": "THE PIER AT ROBERTSON",
+        "ADDRESS": "80 MOHAMED SULTAN ROAD THE PIER AT ROBERTSON SINGAPORE 239013",
+        "POSTAL": "239013",
+        "X": "28797.02318059094",
+        "Y": "30409.42164661177",
+        "LATITUDE": "1.291286508170154",
+        "LONGITUDE": "103.8404801668337"
+      }
+    ]
+  },
+  "30 Race Course Lane": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=30+Race+Course+Lane&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "CITY STUDIOS",
+        "BLK_NO": "30",
+        "ROAD_NAME": "RACE COURSE LANE",
+        "BUILDING": "CITY STUDIOS",
+        "ADDRESS": "30 RACE COURSE LANE CITY STUDIOS SINGAPORE 218745",
+        "POSTAL": "218745",
+        "X": "30169.74355816655",
+        "Y": "32492.19783697464",
+        "LATITUDE": "1.31012233674354",
+        "LONGITUDE": "103.8528147792791"
+      }
+    ]
+  },
+  "99 Sophia Road": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=99+Sophia+Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "SAPPHIRE 99",
+        "BLK_NO": "99",
+        "ROAD_NAME": "SOPHIA ROAD",
+        "BUILDING": "SAPPHIRE 99",
+        "ADDRESS": "99 SOPHIA ROAD SAPPHIRE 99 SINGAPORE 228189",
+        "POSTAL": "228189",
+        "X": "29481.62086468656",
+        "Y": "31619.26673486084",
+        "LATITUDE": "1.302227896408067",
+        "LONGITUDE": "103.8466316211693"
+      }
+    ]
+  },
+  "180A Bencoolen Street": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=180A+Bencoolen+Street&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "THE BENCOOLEN",
+        "BLK_NO": "180A",
+        "ROAD_NAME": "BENCOOLEN STREET",
+        "BUILDING": "THE BENCOOLEN",
+        "ADDRESS": "180A BENCOOLEN STREET THE BENCOOLEN SINGAPORE 189647",
+        "POSTAL": "189647",
+        "X": "30229.99748852849",
+        "Y": "31556.68540842645",
+        "LATITUDE": "1.301661888236519",
+        "LONGITUDE": "103.8533561231495"
+      }
+    ]
+  },
+  "30 Keppel Bay Drive": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=30+Keppel+Bay+Drive&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "CARIBBEAN AT KEPPEL BAY",
+        "BLK_NO": "30",
+        "ROAD_NAME": "KEPPEL BAY DRIVE",
+        "BUILDING": "CARIBBEAN AT KEPPEL BAY",
+        "ADDRESS": "30 KEPPEL BAY DRIVE CARIBBEAN AT KEPPEL BAY SINGAPORE 098650",
+        "POSTAL": "098650",
+        "X": "26028.63599457406",
+        "Y": "27650.18438126706",
+        "LATITUDE": "1.266332882455451",
+        "LONGITUDE": "103.8156052183131"
+      }
+    ]
+  },
+  "46 Keppel Bay Drive": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=46+Keppel+Bay+Drive&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "CARIBBEAN AT KEPPEL BAY",
+        "BLK_NO": "46",
+        "ROAD_NAME": "KEPPEL BAY DRIVE",
+        "BUILDING": "CARIBBEAN AT KEPPEL BAY",
+        "ADDRESS": "46 KEPPEL BAY DRIVE CARIBBEAN AT KEPPEL BAY SINGAPORE 098635",
+        "POSTAL": "098635",
+        "X": "25958.17733457312",
+        "Y": "27817.80871723779",
+        "LATITUDE": "1.267848813829096",
+        "LONGITUDE": "103.8149721131723"
+      }
+    ]
+  },
+  "42 Keppel Bay Drive": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=42+Keppel+Bay+Drive&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "CARIBBEAN AT KEPPEL BAY",
+        "BLK_NO": "42",
+        "ROAD_NAME": "KEPPEL BAY DRIVE",
+        "BUILDING": "CARIBBEAN AT KEPPEL BAY",
+        "ADDRESS": "42 KEPPEL BAY DRIVE CARIBBEAN AT KEPPEL BAY SINGAPORE 098656",
+        "POSTAL": "098656",
+        "X": "25924.96503273956",
+        "Y": "27703.31970561109",
+        "LATITUDE": "1.266813413147562",
+        "LONGITUDE": "103.8146736968439"
+      }
+    ]
+  },
+  "1 Leedon Heights": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=1+Leedon+Heights&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "D'LEEDON",
+        "BLK_NO": "1",
+        "ROAD_NAME": "LEEDON HEIGHTS",
+        "BUILDING": "D'LEEDON",
+        "ADDRESS": "1 LEEDON HEIGHTS D'LEEDON SINGAPORE 267939",
+        "POSTAL": "267939",
+        "X": "24547.93437321205",
+        "Y": "33152.10859033465",
+        "LATITUDE": "1.316090218636446",
+        "LONGITUDE": "103.802300019532"
+      }
+    ]
+  },
+  "921 Bukit Timah Road": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=921+Bukit+Timah+Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "THE CASCADIA",
+        "BLK_NO": "921",
+        "ROAD_NAME": "BUKIT TIMAH ROAD",
+        "BUILDING": "THE CASCADIA",
+        "ADDRESS": "921 BUKIT TIMAH ROAD THE CASCADIA SINGAPORE 589624",
+        "POSTAL": "589624",
+        "X": "22931.82614203636",
+        "Y": "35111.30039130338",
+        "LATITUDE": "1.333808226154373",
+        "LONGITUDE": "103.7877781467707"
+      }
+    ]
+  },
+  "2 Anamalai Avenue": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=2+Anamalai+Avenue&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "ROYALGREEN",
+        "BLK_NO": "2",
+        "ROAD_NAME": "ANAMALAI AVENUE",
+        "BUILDING": "ROYALGREEN",
+        "ADDRESS": "2 ANAMALAI AVENUE ROYALGREEN SINGAPORE 279988",
+        "POSTAL": "279988",
+        "X": "23652.33921025041",
+        "Y": "34869.14738063328",
+        "LATITUDE": "1.331618392672949",
+        "LONGITUDE": "103.7942524009869"
+      }
+    ]
+  },
+  "18 Dunman Road": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=18+Dunman+Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "GRAND DUNMAN",
+        "BLK_NO": "18",
+        "ROAD_NAME": "DUNMAN ROAD",
+        "BUILDING": "GRAND DUNMAN",
+        "ADDRESS": "18 DUNMAN ROAD GRAND DUNMAN SINGAPORE 438665",
+        "POSTAL": "438665",
+        "X": "34394.02981111221",
+        "Y": "32217.28046036139",
+        "LATITUDE": "1.307635495865254",
+        "LONGITUDE": "103.890771978632"
+      }
+    ]
+  },
+  "125 Meyer Road": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=125+Meyer+Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "THE MAKENA",
+        "BLK_NO": "125",
+        "ROAD_NAME": "MEYER ROAD",
+        "BUILDING": "THE MAKENA",
+        "ADDRESS": "125 MEYER ROAD THE MAKENA SINGAPORE 437936",
+        "POSTAL": "437936",
+        "X": "34774.62591572199",
+        "Y": "31009.13855155557",
+        "LATITUDE": "1.296709410980735",
+        "LONGITUDE": "103.894191552382"
+      }
+    ]
+  },
+  "7 Chapel Road": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=7+Chapel+Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "7 ON CHAPEL",
+        "BLK_NO": "7",
+        "ROAD_NAME": "CHAPEL ROAD",
+        "BUILDING": "7 ON CHAPEL",
+        "ADDRESS": "7 CHAPEL ROAD 7 ON CHAPEL SINGAPORE 429510",
+        "POSTAL": "429510",
+        "X": "36267.69669996947",
+        "Y": "32107.38906465843",
+        "LATITUDE": "1.306641233192551",
+        "LONGITUDE": "103.9076077292966"
+      }
+    ]
+  },
+  "70 Pasir Panjang Road": {
+    "source": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=70+Pasir+Panjang+Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+    "checkedDate": "2026-11-02",
+    "found": 1,
+    "totalNumPages": 1,
+    "pageNum": 1,
+    "results": [
+      {
+        "SEARCHVAL": "MAPLETREE BUSINESS CITY",
+        "BLK_NO": "70",
+        "ROAD_NAME": "PASIR PANJANG ROAD",
+        "BUILDING": "MAPLETREE BUSINESS CITY",
+        "ADDRESS": "70 PASIR PANJANG ROAD MAPLETREE BUSINESS CITY SINGAPORE 117371",
+        "POSTAL": "117371",
+        "X": "24296.35064578336",
+        "Y": "28738.88970409706",
+        "LATITUDE": "1.276178596599336",
+        "LONGITUDE": "103.8000399336777"
+      }
+    ]
+  }
+}

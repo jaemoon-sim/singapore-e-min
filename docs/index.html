@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1d5446">
+  <meta name="description" content="싱가포르 6개 지역의 임대 매물 18개. 지도에서 월세, MRT 접근성, Google Singapore 통근 시간을 비교하세요.">
+  <title>Singapore Home Map · 싱가포르 집 찾기</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/vendor/leaflet/leaflet.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#listings">매물 목록으로 이동</a>
+  <header class="app-header">
+    <a class="brand" href="./" aria-label="Singapore Home Map 처음으로">
+      <span class="brand-icon" aria-hidden="true">⌂</span>
+      <span><strong>Singapore <span>Home Map</span></strong><small>일상과 출근 사이, 살고 싶은 동네 찾기</small></span>
+    </a>
+    <div class="header-meta"><span class="live-dot"></span>2026.11.02 조사 <span class="divider">/</span> 6개 지역 · 18개 매물</div>
+    <button id="about-open" class="icon-button" aria-label="데이터 안내 열기">ⓘ</button>
+  </header>
+
+  <main class="workspace">
+    <aside class="sidebar" aria-label="매물 검색과 목록">
+      <div class="search-panel">
+        <div class="eyebrow">YOUR NEXT NEIGHBOURHOOD</div>
+        <h1>싱가포르, 어디에 살까?</h1>
+        <p class="intro">마음에 드는 동네부터, 지도에서 둘러보세요.</p>
+        <div class="criteria"><span>월 S$6,000 기준</span><span>방 2개 이상</span><span>MRT 도보 &lt;10분</span></div>
+        <label class="search-field"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="단지, 주소, MRT역 검색" aria-label="단지, 주소, MRT역 검색"></label>
+        <div id="regions" class="region-filters" role="group" aria-label="지역 선택"></div>
+        <div class="filter-row">
+          <label class="budget-toggle"><input id="budget" type="checkbox"><span class="toggle" aria-hidden="true"></span>S$6,000 이하만</label>
+          <label class="beds-select"><span class="sr-only">방 개수</span><select id="beds"><option value="0">방 전체</option><option value="2">방 2개</option><option value="3">방 3개</option></select></label>
+        </div>
+      </div>
+      <div class="list-toolbar"><div><strong id="result-count" aria-live="polite">매물 불러오는 중</strong><span id="result-caption">검색 상한 S$6,500</span></div><label><span class="sr-only">정렬</span><select id="sort"><option value="region">지역 순</option><option value="rent">월세 낮은 순</option><option value="commute">통근 빠른 순</option><option value="walk">역 가까운 순</option></select></label></div>
+      <div id="listings" class="listings" tabindex="-1"><div class="loading">지도를 준비하고 있습니다…</div></div>
+      <div class="sidebar-footer">가격·입주 가능 여부는 원문에서 다시 확인해 주세요.<button id="data-info" type="button">데이터 안내 ↗</button></div>
+    </aside>
+
+    <section class="map-section" aria-label="싱가포르 매물 지도">
+      <div id="map" aria-label="매물과 Google Singapore 위치 지도"></div>
+      <div class="map-toolbar"><span class="map-hint"><span class="live-dot"></span><span id="map-count">18</span>개 매물의 위치</span><button id="fit-map" class="map-button">전체 보기 <span aria-hidden="true">⤢</span></button><button id="office-focus" class="map-button office-focus">Google 위치 <span aria-hidden="true">↗</span></button></div>
+      <div id="tile-error" class="tile-error" hidden>배경 지도를 불러오지 못했습니다. 연결을 확인한 뒤 <button id="tile-retry">다시 시도</button>해 주세요. 매물 목록은 계속 이용할 수 있습니다.</div>
+      <div class="map-note"><span class="office-key">G</span><div><strong>Google Singapore</strong><span>Mapletree Business City · 통근 목적지</span></div></div>
+      <div id="detail" class="detail-panel" role="region" aria-label="선택한 매물 상세 정보" hidden></div>
+    </section>
+  </main>
+
+  <nav class="mobile-tabs" aria-label="화면 선택"><button id="show-map" class="active" aria-pressed="true">지도 보기</button><button id="show-list" aria-pressed="false">목록 <span id="mobile-count">18</span></button></nav>
+
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <button id="about-close" class="close-button" aria-label="안내 닫기">×</button>
+    <div class="eyebrow">ABOUT THIS MAP</div><h2 id="about-title">지도를 읽는 방법</h2>
+    <p>2026년 11월 2일 PropertyGuru에서 조사한 <strong>6개 지역, 18개 매물</strong>의 스냅샷입니다. 월세 상한 S$6,500, 방 2개 이상, MRT 도보 10분 미만 조건으로 모았습니다.</p>
+    <dl class="about-facts"><dt>통근 시간</dt><dd>PropertyGuru 앱의 Public Transport 예상값입니다. 아침 도착 시각을 지정하지 않았으며, 실시간·출근 시간대 경로를 확인한 값은 아닙니다. Google Singapore, 70 Pasir Panjang Road가 목적지입니다.</dd><dt>MRT 도보</dt><dd>매물에 표시된 수치입니다. 실제 동·출입구에 따라 달라질 수 있습니다.</dd><dt>지도 위치</dt><dd>SLA OneMap에서 주소를 대조한 건물 위치입니다. 개별 호실·출입구 위치는 아닙니다. 가까운 핀은 묶어 표시하며 누르면 확대됩니다.</dd><dt>지역 구분</dt><dd>영상의 묶음 기준입니다. 실제 행정 경계와 다르며 Farrer Park, Sophia Road, Farrer Road, Dakota 생활권의 매물이 포함됩니다.</dd><dt>준공 시점</dt><dd>조사한 TOP 표기를 그대로 사용합니다. 연도만 확인한 매물은 연도까지만 표시합니다.</dd><dt>현재 상태</dt><dd>자동 갱신되지 않습니다. 월세, 입주 가능일, 추가 비용과 매물 유효 여부는 PropertyGuru 원문 및 에이전트에게 확인해 주세요.</dd></dl>
+    <p class="credits">지도 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a> · 주소 좌표 <a href="https://www.onemap.gov.sg/" target="_blank" rel="noopener noreferrer">SLA OneMap</a> · 지도 라이브러리 <a href="https://leafletjs.com/" target="_blank" rel="noopener noreferrer">Leaflet</a></p>
+  </dialog>
+  <noscript><div class="fatal-error">이 지도는 JavaScript가 필요합니다. 브라우저 설정에서 JavaScript를 활성화해 주세요.</div></noscript>
+</body>
+</html>
